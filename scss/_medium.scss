@@ -17,3 +17,10 @@ nav {
     }
 
 } // end nav
+
+// add loop med.
+
+@for $i from 1 through 12 {
+    $w: calc($i / 12) * 100%;
+    .medium-#{$i} {flex-basis: $w;}
+  }

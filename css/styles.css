@@ -363,8 +363,7 @@ body {
 }
 
 #headerWrapper {
-  color: rgba(165, 82, 31, 0.9294117647);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
 }
 
 header {
@@ -380,7 +379,7 @@ header x h1 {
 }
 
 #navWrapper {
-  background-color: #a5521f;
+  background-color: black;
 }
 
 nav ul li a {
@@ -401,7 +400,8 @@ nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: rgb(182, 26, 12);
+  background: rgb(182, 77, 18);
+  background: radial-gradient(circle, rgb(146, 73, 193) 6%, rgb(140, 45, 218) 17%, rgb(173, 63, 242) 41%, rgb(182, 18, 18) 100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
 }
@@ -418,47 +418,131 @@ nav a:hover {
 
 #mainWrapper h1 {
   font-weight: 600;
-  color: #a5521f;
-  margin: 2rem;
-  padding: 16px;
-}
-
-#ze {
   color: black;
   margin: 2rem;
   padding: 16px;
 }
 
-picture img {
-  margin: 5rem;
-  width: 90%;
-  margin-left: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: black;
+  padding: 0 8px;
+  margin: 1rem 0;
 }
 
-video {
-  width: 90%;
-  margin-left: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.column {
+  padding: 0 8px;
+  margin: 8px 0;
+  text-align: center;
+}
+.column p {
+  font-weight: 200;
 }
 
-details {
+section {
+  position: relative;
+  transition: 1s;
+}
+
+section:hover {
+  top: -10px;
+}
+
+button {
+  border: none;
+  background-color: rgba(0, 81, 255, 0.946);
   color: white;
-  margin: 0.5rem 16px;
+  padding: 0.5rem;
+  border-radius: 20px;
 }
-details summary {
-  background-color: rgb(182, 26, 12);
-  padding: 0.7rem;
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+.line, .round, .fill, .shadow {
+  padding: 8px 8px;
+}
+
+.textcolor {
+  color: white;
+}
+
+.line {
+  border: rgb(83, 80, 80) solid 1px;
+}
+
+.round {
   border-radius: 5px;
-  margin: 2rem;
 }
-details p {
-  color: black;
-  padding: 1rem;
+
+.fill {
+  background: rgb(182, 77, 18);
+  background: radial-gradient(circle, rgb(146, 73, 193) 6%, rgb(140, 45, 218) 17%, rgb(173, 63, 242) 41%, rgb(182, 77, 18) 100%);
+}
+
+.fillRed {
+  background: rgb(182, 77, 18);
+  background: radial-gradient(circle, rgb(182, 77, 18) 6%, rgb(218, 45, 45) 17%, rgb(242, 63, 63) 41%, rgb(146, 73, 193) 100%);
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.small-1 {
+  flex-basis: 8.3333333333%;
+}
+
+.small-2 {
+  flex-basis: 16.6666666667%;
+}
+
+.small-3 {
+  flex-basis: 25%;
+}
+
+.small-4 {
+  flex-basis: 33.3333333333%;
+}
+
+.small-5 {
+  flex-basis: 41.6666666667%;
+}
+
+.small-6 {
+  flex-basis: 50%;
+}
+
+.small-7 {
+  flex-basis: 58.3333333333%;
+}
+
+.small-8 {
+  flex-basis: 66.6666666667%;
+}
+
+.small-9 {
+  flex-basis: 75%;
+}
+
+.small-10 {
+  flex-basis: 83.3333333333%;
+}
+
+.small-11 {
+  flex-basis: 91.6666666667%;
+}
+
+.small-12 {
+  flex-basis: 100%;
 }
 
 #footerWrapper {
-  background-color: #a5521f;
+  background-color: black;
 }
 
 footer {
@@ -489,6 +573,54 @@ footer p {
   nav ul li a {
     border: none;
   }
+
+  .medium-1 {
+    flex-basis: 8.3333333333%;
+  }
+
+  .medium-2 {
+    flex-basis: 16.6666666667%;
+  }
+
+  .medium-3 {
+    flex-basis: 25%;
+  }
+
+  .medium-4 {
+    flex-basis: 33.3333333333%;
+  }
+
+  .medium-5 {
+    flex-basis: 41.6666666667%;
+  }
+
+  .medium-6 {
+    flex-basis: 50%;
+  }
+
+  .medium-7 {
+    flex-basis: 58.3333333333%;
+  }
+
+  .medium-8 {
+    flex-basis: 66.6666666667%;
+  }
+
+  .medium-9 {
+    flex-basis: 75%;
+  }
+
+  .medium-10 {
+    flex-basis: 83.3333333333%;
+  }
+
+  .medium-11 {
+    flex-basis: 91.6666666667%;
+  }
+
+  .medium-12 {
+    flex-basis: 100%;
+  }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
@@ -503,5 +635,53 @@ footer p {
   nav ul li a {
     padding: 0.7rem 2rem;
     font-size: 0.8rem;
+  }
+
+  .large-1 {
+    flex-basis: 8.3333333333%;
+  }
+
+  .large-2 {
+    flex-basis: 16.6666666667%;
+  }
+
+  .large-3 {
+    flex-basis: 25%;
+  }
+
+  .large-4 {
+    flex-basis: 33.3333333333%;
+  }
+
+  .large-5 {
+    flex-basis: 41.6666666667%;
+  }
+
+  .large-6 {
+    flex-basis: 50%;
+  }
+
+  .large-7 {
+    flex-basis: 58.3333333333%;
+  }
+
+  .large-8 {
+    flex-basis: 66.6666666667%;
+  }
+
+  .large-9 {
+    flex-basis: 75%;
+  }
+
+  .large-10 {
+    flex-basis: 83.3333333333%;
+  }
+
+  .large-11 {
+    flex-basis: 91.6666666667%;
+  }
+
+  .large-12 {
+    flex-basis: 100%;
   }
 }

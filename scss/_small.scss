@@ -19,8 +19,7 @@ body {
 }
 
 #headerWrapper {
-  color: #a5521fed;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
 }
 
 header {
@@ -38,7 +37,7 @@ header {
 
 
 #navWrapper {
-  background-color: #a5521f;
+  background-color: black;
 }
 
 nav {
@@ -62,7 +61,8 @@ nav {
     }
   }
   li.active {
-    background-color:rgb(182, 26, 12);
+    background: rgb(182,77,18);
+    background: radial-gradient(circle, rgba(146,73,193,1) 6%, rgb(140, 45, 218) 17%, rgb(173, 63, 242) 41%, rgb(182, 18, 18) 100%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
   }
@@ -79,23 +79,99 @@ nav {
 }
 
 
+// add for loop
+
+
+
 
 
 #mainWrapper {
   h1 {
     font-weight: $boldWeight;
-    color: #a5521f;
+    color: black;
     margin: 2rem;
     padding: $gutter;
   }
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  color: black;
+  padding: 0 8px;
+  margin: 1rem 0;
+}
 
+
+
+.column {
+  padding: 0 8px;
+  margin: 8px 0;
+  text-align: center;
+  p {
+    font-weight: $lightWeight;
+  }
+}
+
+section {
+  position: relative;
+  transition: 1s;
+}
+section:hover {
+ top: -10px;
+}
+
+button {
+  border: none;
+  background-color: rgba(0, 81, 255, 0.946);
+  color: white;
+  padding: .5rem;
+  border-radius: 20px;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+.line, .round, .fill, .shadow {
+  padding: 8px 8px;
+}
+
+.textcolor {
+  color: white;
+}
+.line {
+  border: rgb(83, 80, 80) solid 1px;
+}
+.round {
+  border-radius: 5px;
+}
+.fill {
+  background: rgb(182,77,18);
+background: radial-gradient(circle, rgba(146,73,193,1) 6%, rgb(140, 45, 218) 17%, rgb(173, 63, 242) 41%, rgba(182,77,18,1) 100%);
+}
+
+.fillRed {
+  background: rgb(182,77,18);
+  background: radial-gradient(circle, rgba(182,77,18,1) 6%, rgba(218,45,45,1) 17%, rgba(242,63,63,1) 41%, rgba(146,73,193,1) 100%);
+  
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@for $i from 1 through 12 {
+  $w: calc($i / 12) * 100%;
+  .small-#{$i} {flex-basis: $w;}
+}
 
 // begin the footer
 
 #footerWrapper {
-  background-color: #a5521f;
+  background-color: black;
 }
 footer {
   padding: 0.5rem $gutter;
